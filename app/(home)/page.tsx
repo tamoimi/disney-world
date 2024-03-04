@@ -9,6 +9,7 @@ async function getCharacters() {
 
 export default async function Home() {
   const characters = await getCharacters();
+  console.log("characters", characters);
 
   return (
     <main className="p-5 lg:px-72">
@@ -26,6 +27,7 @@ export default async function Home() {
                 className="rounded"
               />
               <h2 className="text-center mt-2 text-sm font-semibold">{c.name}</h2>
+              <h2 className="text-center mt-2 text-sm">{c.createdAt}</h2>
               <h2 className="text-center mt-2 text-sm">{c.films}</h2>
             </div>
           ))}
