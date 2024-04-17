@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-yellow-50">
+    <html lang="en" className="">
       <body className={montserrat.className}>
         <NavBar />
         {children}
